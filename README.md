@@ -1,1 +1,1 @@
-This repository is mainly abuit CSS and its features
+This repository is mainly about CSS and its features .
