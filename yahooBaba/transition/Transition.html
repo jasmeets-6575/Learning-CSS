@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        #box{
+            margin:250px;
+            width:100px;
+            height:100px;
+            background-color: rgb(173, 173, 226);
+            transition-property: all;
+            transition-duration: 1.5s;
+            transition-timing-function: cubic-bezier(1.0, 0.82, 0.165, 1);
+            /* To add delay we use transition-delay:2s ;  */
+        }
+        #box:hover{
+            width: 175px;
+            height: 175px;
+            background: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+     <div id="box"></div>
+</body>
+</html>
