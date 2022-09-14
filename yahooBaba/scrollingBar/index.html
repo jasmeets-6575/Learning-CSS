@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling bar</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            overflow: scroll;
+            border: 1px solid black;
+            margin: 100px 100px;
+        }
+
+        .box::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        .box::-webkit-scrollbar-track {
+            border-radius: 20px;
+            background: rgb(141, 214, 243);
+            box-shadow: inset 0px 0px 6px rgba(0,0,0,0.6);
+        }
+        
+        .box::-webkit-scrollbar-thumb {
+            background-color: aquamarine;
+            border-radius: 20px;
+            box-shadow: inset 0px 0px 6px rgba(0,0,0,0.6);
+        }
+        ::-webkit-scrollbar-corner{
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facere nisi praesentium
+        possimus adipisci eos, repudiandae Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos quis quae
+        atque sed. Alias adipisci labore nemo quos aliquid tenetur optio maxime modi omnis expedita? Voluptate, quia.
+        Numquam eius mollitia iusto magni alias facilis et eum exercitationem, eaque, natus cupiditate, nobis maxime
+        optio error culpa laudantium esse excepturi delectus veritatis nemo repellendus! Esse reiciendis dolorum
+        distinctio! Inventore beatae iste cumque quos rem est molestiae, laudantium deserunt distinctio eos quia
+        necessitatibus, eligendi temporibus natus! Explicabo totam facilis ex magni asperiores libero quos hic
+        cupiditate qui impedit, fuga eius consequuntur alias dignissimos ratione omnis adipisci veniam. Quod, deserunt
+        suscipit? Sed, dolorem doloremque. obcaecati aliquid libero suscipit ipsa debitis voluptatum minima, eius porro
+        placeat ab natus hic ad! Expedita voluptatum quisquam ratione perferendis amet sequi dolorem, dolores ut eum
+        placeat, tempora culpa ad labore aliquid ea officia earum eligendi magnam perspiciatis doloribus aspernatur.
+        Molestiae quas voluptatem quisquam dolores eius a sapiente magni perferendis, reiciendis vero facilis alias
+        deleniti numquam tempore ullam maiores ab facere eum excepturi. Doloremque minus pariatur ratione esse
+        asperiores tempora nobis itaque, explicabo alias atque quia, aliquam suscipit quis, omnis obcaecati sed fugit
+        impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et excepturi quae quos deserunt
+        necessitatibus! Numquam delectus quaerat illum earum nam? Harum sit molestias iste accusamus voluptatibus
+        facere, soluta dolore quos porro odio magnam ea quae, voluptate cumque magni obcaecati voluptas in nemo. Quod,
+        accusamus dolorem officia sit voluptates minus velit?</div>
+</body>
+
+</html>

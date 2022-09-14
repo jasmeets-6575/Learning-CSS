@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators Selectors</title>
+    <style>
+        #box{
+            border: 2px solid black;
+            padding: 10px;
+        }
+        #box2{
+            border: 2px solid red;
+            padding: 10px;
+        }
+        #list li{
+            color: antiquewhite;
+        }
+        #list > li{
+            color: red;
+        }
+        #box > p{
+            color: blue;
+        }
+        /* This is the part of the descendent child selector */
+        /* After that we have adjacent sibling selector which uses '+' sign means to target the direct after child AND another type is the General sibling Selectors in which the '~' sign it means to target the all the chidrens except first  */
+    </style>
+</head>
+<body>
+   <ul id="list">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.
+               <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing./li>
+               </ul>
+            </li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet loo pioss felos sdjo</li>          
+   </ul>
+    <div id="box">
+        <span>HELLO WORLD</span>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur et suscipit,<span>Lorem ipsum dolor sit amet.</span> rerum enim atque maiores sequi quos aliquid culpa distinctio cumque. Earum, incidunt ipsa. Consequatur dolores eveniet quisquam nisi quam?</p>
+        <div id="box2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia repellendus, mollitia sed quam natus corporis officia assumenda repudiandae quas perferendis aperiam recusandae consequatur velit nam fugit eum adipisci ducimus impedit.</p></div>
+    </div>
+    
+</body>
+</html>
