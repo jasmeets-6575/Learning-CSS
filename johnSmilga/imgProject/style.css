@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    height: 150px;
+    background: #222;
+    padding: 30px;
+}
+
+.nav-title{
+    font-size: 45px;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 5px;
+}
+.nav-center{
+    width: 100%;
+    margin: auto;
+    align-items: center;
+}

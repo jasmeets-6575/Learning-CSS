@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 25px;
+}
+
+.nav{
+    height: 5rem;
+    background-color: black;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.nav-title{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 10px;   
+}
+
+.nav-center{
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+
+.hero-center{
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 5rem 0;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero-center h1{
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.hero-center p{
+    max-width: 576px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.hero-btn{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 4px 7px;
+    border-radius: 4px;
+}
+
+.temp{
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+
+.hero{
+    min-height: calc(100vh - 5rem);
+    background:rgb(105,62,27);
+}
+@media screen and (min-width:768px) {
+    .hero{
+        background:linear-gradient(to left ,rgba(105,62,27,0.1),rgba(105,62,27,0.9)) , url(./coffee.jpg) center/cover;
+        /* width: 100vw; */
+        min-height: calc(100vh - 5rem);
+    }
+}
