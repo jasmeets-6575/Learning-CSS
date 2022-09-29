@@ -49,6 +49,7 @@ body{
     text-transform: capitalize;
     margin-bottom: 20px;
 }
+
 .hero-center p{
     max-width: 576px;
     margin: 0 auto;
@@ -62,6 +63,8 @@ body{
     text-transform: uppercase;
     padding: 4px 7px;
     border-radius: 4px;
+    animation: top 2s 1;
+    animation-fill-mode: backwards;
 }
 
 .temp{
@@ -78,5 +81,31 @@ body{
         background:linear-gradient(to left ,rgba(105,62,27,0.1),rgba(105,62,27,0.9)) , url(./coffee.jpg) center/cover;
         /* width: 100vw; */
         min-height: calc(100vh - 5rem);
+    }
+}
+.hero-text{
+    animation: bottom 2s 1;
+    animation-fill-mode: backwards;
+}
+@keyframes bottom {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes top {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
