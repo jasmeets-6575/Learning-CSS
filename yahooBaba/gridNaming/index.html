@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Naming </title>
+    <style>
+        .container {
+            background: #eee;
+            width: 720px;
+            margin: 45px auto 0;
+            text-align: center;
+            color: white;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 120px 60px 100px 400px 50px;
+            gap: 15px;
+
+            grid-template-areas:"header header header"
+                                "menu menu menu"
+                                "box1 box2 sidebar"
+                                "content content sidebar"
+                                "footer footer footer";
+        }
+
+        .header {
+            background: orangered;
+            grid-area: header;
+        }
+
+        .menu {
+            background: yellowgreen;
+            grid-area: menu;
+        }
+
+        .box1 {
+            background-color: mediumpurple;
+            grid-area: box1;
+        }
+
+        .box2 {
+            background: hotpink;
+            grid-area: box2;
+        }
+
+        .sidebar {
+            background: blue;
+            grid-area: sidebar ;
+        }
+
+        .content {
+            background: seagreen;
+            grid-area: content;
+        }
+
+        .footer {
+            background: gold;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items header">HEADER</div>
+        <div class="items menu">MENU</div>
+        <div class="items box1">BOX1</div>
+        <div class="items box2">BOX2</div>
+        <div class="items sidebar">SIDEBAR</div>
+        <div class="items content">CONTENT</div>
+        <div class="items footer">FOOTER</div>
+    </div>
+</body>
+
+</html>

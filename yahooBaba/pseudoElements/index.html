@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        /* 
+        ::after
+        ::before
+        ::selection
+        ::placeholder
+        ::first-letter
+        ::first line */
+
+        p::selection{
+            background-color: azure;
+            color:black;
+        }
+        p::before{
+            content: "This is";
+            background-color: beige;
+            color: red;
+        }
+        p:hover:after{
+            content: "is called";
+            background-color: pink;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus illum assumenda dolorem aperiam perferendis magni vitae, laboriosam error doloremque ad placea fugiat suscipit non ipsa aliquam similique dignissimos possimus tempore obcaecati quidem impedit quibusdam. Quisquam architecto veritatis quaerat libero placeat eos.</p>
+
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+        </ul>
+
+        <p id="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate reiciendis debitis libero qui eveniet odio corporis quod similique at aperiam optio enim nulla impedit, eaque earum pariatur aut. Odit numquam tenetur architecto eum harum deleniti </p>
+</body>
+</html>

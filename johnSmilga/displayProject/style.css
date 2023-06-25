@@ -1,0 +1,26 @@
+body{
+    font: 1em sans-serif;
+    background-color: #f1f5f9;
+    line-height: 20px;
+}
+.section{
+    padding: 20px 10px;
+    background: #fff;
+}
+.section-title{
+    text-align: center;
+    text-transform: capitalize;
+}
+.title-underline{
+    height: 4px;
+    width: 80px;
+    background: grey;
+    align-items: center;
+    margin:0px auto 20px auto ;
+}
+.section-center{
+    width: 90vw;
+    /* max-width: 1170px; */
+    margin: 0 auto;
+    border: 2px solid red;
+}
