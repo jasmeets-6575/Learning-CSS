@@ -69,18 +69,10 @@ ul {
 a {
   text-decoration: none;
 }
-img {
-  width: 100%;
-  display: block;
-}
 img:not(.nav-logo) {
   width: 100%;
   display: block;
 }
-/* img:not(.nav-logo) {
-  width: 100%;
-  display: block;
-} */
 
 h1,
 h2,
@@ -287,7 +279,7 @@ Hero
 */
 .hero {
   min-height: 100vh;
-  background-color: var(--clr-primary-5);
+  background: var(--clr-primary-5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -300,7 +292,6 @@ Hero
 .hero-banner h1 {
   text-transform: uppercase;
 }
-
 .hero-banner p {
   max-width: 35rem;
   margin-left: auto;
@@ -311,7 +302,7 @@ Hero
 .hero-btn {
   padding: 0.9rem 1.6rem;
   font-size: 1.25rem;
-  background-color: var(--clr-white);
+  background: var(--clr-white);
   color: var(--clr-primary-5);
 }
 .hero-btn:hover {
@@ -319,9 +310,9 @@ Hero
   color: var(--clr-white);
   border-color: var(--clr-white);
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero {
-    background: linear-gradient(rgba(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+    background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
       url("../images/main.jpeg") center/cover no-repeat;
   }
   .hero-banner {
@@ -349,8 +340,8 @@ About
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .about-info,
-  .about-img {
+  .about-img,
+  .about-info {
     flex: 0 0 calc(50% - 2rem);
     margin-bottom: 0;
     align-self: center;
@@ -366,12 +357,16 @@ About
     box-sizing: border-box;
     top: -1.5rem;
     left: -1.5rem;
-    z-index: -1;
+    /* z-index: -1; */
   }
   .about-img {
     position: relative;
   }
+  .about-photo {
+    position: relative;
+  }
 }
+
 /*
 =============== 
 Services
