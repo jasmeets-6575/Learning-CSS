@@ -73,6 +73,10 @@ img {
   width: 100%;
   display: block;
 }
+img:not(.nav-logo) {
+  width: 100%;
+  display: block;
+}
 /* img:not(.nav-logo) {
   width: 100%;
   display: block;
