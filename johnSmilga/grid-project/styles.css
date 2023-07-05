@@ -170,7 +170,7 @@ p {
   color: var(--primaryColor);
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .cards-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -181,4 +181,15 @@ p {
   .cards-center {
     grid-template-columns: repeat(3, 1fr);
   }
+} */
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+.cards-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+  grid-column-gap: 2rem;
 }
