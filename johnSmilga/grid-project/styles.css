@@ -193,3 +193,30 @@ p {
   grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
   grid-column-gap: 2rem;
 }
+/* 
+  =============
+  Tiles
+  =============
+*/
+
+.tiles {
+  padding: 4rem 0;
+}
+.tiles-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 2rem auto;
+  display: grid;
+  grid-row-gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .tiles-center {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .tiles-center {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
